@@ -1,0 +1,6 @@
+grep "Trotterization Energy estimate" */out* > Trotterization_Raw
+grep "Qubitization Energy estimate" */out* > Qubitization_Raw
+grep "Trotterization Energy estimate" */out* | awk '{print $6}' > Trotterization.csv
+grep "Qubitization Energy estimate" */out* | awk '{print $6}' > Qubitization.csv
+sed -i 's/;//g' Trotterization.csv
+sed -i 's/;//g' Qubitization.csv
