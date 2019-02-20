@@ -10,7 +10,7 @@ a build of NWChem or a URL.
 
 INSTALL
 *******
-You will need t download the singularity:
+You will need to download the singularity:
 
 	wget https://www.dropbox.com/s/rp8w7xzaku2ysf0/qdk.sif
 
