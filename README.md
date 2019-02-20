@@ -10,6 +10,10 @@ a build of NWChem or a URL.
 
 INSTALL
 *******
+You will need t download the singularity:
+
+	wget https://www.dropbox.com/s/rp8w7xzaku2ysf0/qdk.sif
+
 You will need to compile one file:
 
 	gfortran -ffixed-line-length-none Generate_Input.F -o Generate_Input
@@ -17,8 +21,8 @@ You will need to compile one file:
 To make sure you have all of the QDK files to run execute the following commands:
 
 	singularity shell qdk.sif
-    dotnet new -i Microsoft.Quantum.ProjectTemplates
-    exit
+	dotnet new -i Microsoft.Quantum.ProjectTemplates
+	exit
 
 
 SUBMITTING
@@ -34,7 +38,7 @@ will be an executable "SUBMIT-ALL" that will submit the '.sbatch' files
 in all of the subdirectories.
 
 
-Grabbing Data
+GRABBING DATA
 *************
 In each directory there is a file "Grab_Data". Executing this will grab
 the energy estimates from each of the outputs.
