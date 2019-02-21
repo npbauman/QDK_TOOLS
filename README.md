@@ -27,9 +27,12 @@ Next you will need to compile one file:
 To make sure you have all of the QDK files to run execute the following commands:
 
 	singularity shell qdk.sif
-	dotnet new -i Microsoft.Quantum.ProjectTemplates
+	dotnet restore
 	exit
 
+	singularity shell qdk.sif
+	dotnet new -i Microsoft.Quantum.ProjectTemplates
+	exit
 
 TESTING
 *******
