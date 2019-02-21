@@ -14,7 +14,10 @@ You will need to download the singularity:
 
 	wget https://www.dropbox.com/s/rp8w7xzaku2ysf0/qdk.sif
 
-You will need to compile one file:
+This may need to be downloaded on your local machine and 
+transferred to the desired machine.
+
+Next you will need to compile one file:
 
 	gfortran -ffixed-line-length-none Generate_Input.F -o Generate_Input
 
