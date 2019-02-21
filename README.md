@@ -8,6 +8,8 @@ time. This package also contains a singularity file for the
 You will need to have a way to obtain a '.yaml' file, either through
 a build of NWChem or a URL.
 
+If there is ever a problem contact Nicholas Bauman (nicholas.bauman@pnnl.gov).
+
 INSTALL
 *******
 You will need to download the singularity:
@@ -15,7 +17,8 @@ You will need to download the singularity:
 	wget https://www.dropbox.com/s/rp8w7xzaku2ysf0/qdk.sif
 
 This may need to be downloaded on your local machine and 
-transferred to the desired machine.
+transferred to the desired machine. Make sure this is placed
+in the 'QDK_TOOLS' directory.
 
 Next you will need to compile one file:
 
@@ -26,6 +29,16 @@ To make sure you have all of the QDK files to run execute the following commands
 	singularity shell qdk.sif
 	dotnet new -i Microsoft.Quantum.ProjectTemplates
 	exit
+
+
+TESTING
+*******
+To see if the singularity is working change directories into the 
+'Teleportation' subdirectory. Execute the folowing command:
+
+	singularity run ../qdk.sif
+
+All of the teleportations should be successful.
 
 
 SUBMITTING
