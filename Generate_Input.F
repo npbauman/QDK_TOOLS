@@ -277,9 +277,9 @@
      &)')
 
       IF(INDEX(ROOT,"G").GT.0) THEN
-        WRITE(INP,"(A)")"            var qSharpData = jordanWignerEncoding.QSharpData();"
+        WRITE(INP,"(A)")"            var qSharpData = jordanWignerEncoding.QSharpData(""|G>"");"
       ELSEIF(INDEX(ROOT,"g").GT.0) THEN
-        WRITE(INP,"(A)")"            var qSharpData = jordanWignerEncoding.QSharpData();"
+        WRITE(INP,"(A)")"            var qSharpData = jordanWignerEncoding.QSharpData(""|G>"");"
       ELSE
         WRITE(INP,"(A)")"            var qSharpData = jordanWignerEncoding.QSharpData(""|E"//TRIM(ROOT)//">"");"
       ENDIF
