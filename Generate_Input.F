@@ -342,6 +342,7 @@
       WRITE(SUB,'(
      &"#!/bin/csh -f"/
      &"#SBATCH -N 1"/
+     &"#SBATCH -c 1"/
      &"#SBATCH --ntasks-per-node 1"
      &)')
       WRITE(SUB,"(A)")"#SBATCH -t "//TIMELENGTH
